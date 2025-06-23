@@ -57,7 +57,7 @@
     const coffeeShopData = {};
 
     async function fetchData() {
-      const res = await fetch('/ingredients');
+      const res = await fetch('http://localhost:8000/ingredients');
       const data = await res.json();
       Object.assign(coffeeShopData, data);
 
